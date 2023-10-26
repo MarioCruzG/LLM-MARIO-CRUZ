@@ -1,8 +1,10 @@
 De mas importante a menos
 Header (Cabezera)
 Main (Cuerpo) o body
+footer
 h1,h2,h3..
 div
 section, article
 p
+label
 b
