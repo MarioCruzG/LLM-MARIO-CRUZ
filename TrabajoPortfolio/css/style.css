@@ -1,9 +1,20 @@
+:root{
+  --nombrecolor: rgb(68, 151, 186);
+}
 body{
     color:white;
     padding:0px;
     margin:0px;
     background-image: url(../img/fondoportfolio.png);
+    display: grid;
+    grid-template-areas: "item1 item1 item1"
+                         "item2 item2 item3"
+                         "item4 item4 item4";
 }
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
 header{
     height: 90px;
     display: flex;
@@ -13,6 +24,9 @@ header{
 }
 section{
     color: black;
+}
+aside{
+  display: block;
 }
 .logo{
     margin:auto;
