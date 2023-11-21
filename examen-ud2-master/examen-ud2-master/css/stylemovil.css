@@ -1,0 +1,19 @@
+/* Movil */
+@media (max-width: 800px){
+    body{
+        background-color: white;
+    }
+    .grid{
+        border-radius: 10px;
+        display: grid;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tg1 tg1 tp1 tp2"
+        "tp3 tp4 tg2 tg2";
+    }
+}

@@ -1,0 +1,153 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+/* general */
+body{
+    background-color: #F2F2F2;
+}
+
+/* header */
+header{
+    background-color: rgb(24, 119, 24);
+    display: flex;
+    justify-content: space-between;
+}
+header > h1{
+    color: white;
+    margin: 0px;
+    padding-left: 80px;
+}
+header > article > span{
+    padding-right: 70px;
+    color: white;
+}
+header > article:last-child{
+    padding-right: 50px;
+}
+
+/* MAIN */
+main{
+    padding-left: 80px;
+}
+
+/* NAV */
+nav{
+    margin-top: 10px;
+}
+nav > a{
+    color: red;
+    text-decoration: none;
+}
+
+/* Section 1 con imagen e informacion rafaela */
+.sect1{
+    display: flex;
+}
+.sect1 > article > img{
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.sect1 > section > article{
+    background-color: white;
+    padding: 5px;
+}
+article span{
+    color: red;
+}
+hr{
+    width: 70%;
+}
+
+/* info botones */
+.fbot{
+    display: flex;
+    justify-content: space-evenly;    
+}
+.fbot article{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    width: 300px;
+}
+
+/* TABLA */
+table{
+    color: red;
+}
+.pf p:first-child{
+    width: 250px;
+}
+.pf p:first-child:hover{
+    background-color: red;
+}
+.pf p a{
+    text-decoration: none;
+    color: red;
+}
+.pf p a:hover{
+    text-decoration: none;
+    color: red;
+    color: white;
+}
+td{
+    background-color: white;
+    padding-left: 20px;
+    color: red
+}
+td > img{
+    width: 30px;
+}
+/* flexboxs */
+.flex1, .flex2{
+    display: flex;
+    color: red;
+}
+.primero p{
+    background-color: red;
+    color: white;
+}
+.iflex{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/* SEPARADOR */
+.separ{
+    display: flex;
+    align-items: baseline;
+}
+
+/* barra lateral */
+.barra{
+    position: absolute;
+    top: 0;
+}
+
+/* ACCESOS DIRECTOS */
+.fimg img{
+    width: 180px;
+    margin: 10px;
+}
+/* boton */
+button{
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    font-weight: bold;
+}
+
+/* contacto */
+.cont{
+    display: flex;
+}
+.cont p{
+    width: 70px;
+    margin-right: 200px;
+    color: red;
+}

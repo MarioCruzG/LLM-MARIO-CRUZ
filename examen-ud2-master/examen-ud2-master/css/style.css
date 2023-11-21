@@ -1,0 +1,225 @@
+/* Monitor */
+
+/* General */
+body{
+    background-color: black;
+}
+@import url(//db.onlinewebfonts.com/c/4313d7354c9b8afe25e1a98773ade48d?family=MM+Headline+Pro+WebTT+Regular);
+@font-face {font-family: "MM Headline Pro WebTT Regular"; src: url("//db.onlinewebfonts.com/t/4313d7354c9b8afe25e1a98773ade48d.eot"); src: url("//db.onlinewebfonts.com/t/4313d7354c9b8afe25e1a98773ade48d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4313d7354c9b8afe25e1a98773ade48d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4313d7354c9b8afe25e1a98773ade48d.woff") format("woff"), url("//db.onlinewebfonts.com/t/4313d7354c9b8afe25e1a98773ade48d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4313d7354c9b8afe25e1a98773ade48d.svg#MM Headline Pro WebTT Regular") format("svg"); }
+/* Header */
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+/* Header1 */
+.header1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(223, 0, 0);
+    align-items: center;
+}
+.logo{
+    width: 60%;
+}
+.header1 button{
+    border: none;
+    background: none;
+}
+.header1 button img{
+    width: 200px;
+}
+.busqueda{
+    display: flex;
+}
+.busqueda img{
+    width: 25px;
+}
+.busqueda input{
+    margin-right: 30px;
+}
+/* Header2 */
+.header2{
+    background-color: grey;
+}
+.contenidodesplegable{
+    display: flex;
+    margin-top: 0px;
+}
+.contenidodesplegable a{
+    padding-right: 10px;
+}
+.BotonDesplegable{
+    display: none;
+}
+
+/* Main */
+
+/* Banner Central */
+.bannercentral{
+    width: 50%;
+    margin-left: 37%;
+    background-color: black;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "txt1 img1"
+    "txt2 img1";
+}
+
+.txt1{
+    grid-area: txt1;
+}
+.txt1 p, .txt2 p{
+    margin: 0px;
+    background-color: gray;
+    padding: 20px;
+}
+.txt2{
+    grid-area: txt2;
+}
+.img1{
+    grid-area: img1;
+    padding: 0px;
+}
+
+/* Tarjetas */
+
+.grid{
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "tg1 tg1 tp1 tp2"
+    "tp3 tp4 tg2 tg2";
+}
+.grid section{
+    background-color: rgb(41, 40, 40);
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+}
+
+.tg1{
+    grid-area: tg1;
+}
+.tg1 img{
+    width: 200px;
+    padding-left: 15%;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.tg2{
+    grid-area: tg2;
+}
+.tg2 img{
+    width: 160px;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.tp1{
+    grid-area: tp1;
+}
+.tp1 img{
+    width: 100px;
+    padding-top: 20px;
+}
+.tp2{
+    grid-area: tp2;
+}
+.tp2 img{
+    width: 100px;
+    padding-top: 20px;
+}
+.tp3{
+    grid-area: tp3;
+}
+.tp3 img{
+    width: 300px;
+    padding-top: 20px;
+}
+.tp4{
+    grid-area: tp4;
+    
+}
+.tp4 img{
+    width: 100px;
+    padding-top: 20px;
+}
+.tg1, .tg2{
+    display: flex;
+}
+.bgimg1, .bgimg2{
+    background-color: red;
+}
+.precio{
+    background-color: rgb(73, 73, 73);
+    padding: 20px;
+    width: 30px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    font-size: x-large;
+}
+.detalles{
+    display: flex;
+}
+.detalles p{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px; 
+    border-collapse: collapse;
+}
+
+h2{
+    color: red;
+    font-weight: bolder ;
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: gray;
+    margin-top: 50px;
+}
+
+/* Movil */
+@media (max-width: 800px){
+
+    .grid{
+        border-radius: 10px;
+        display: grid;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "tg1 tg1"
+        "tg2 tg2";
+    }
+    .tp1, .tp2, .tp3, .tp4, .txt1, .txt2{
+        display: none;
+    }
+    .header2{
+        text-align: center;
+    }
+    .BotonDesplegable{
+        display: unset;
+    }
+    .contenidodesplegable{
+        display: none;
+    }
+}
